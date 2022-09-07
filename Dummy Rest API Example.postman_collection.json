@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "c80b17c8-e84a-43c6-b5dd-25522353616d",
+		"name": "Dummy Rest API Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23045306"
+	},
+	"item": [
+		{
+			"name": "Pegar todos funcionários",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dummy.restapiexample.com/api/v1/employees",
+					"protocol": "https",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pegar um funcionário",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dummy.restapiexample.com/api/v1/employee/4784",
+					"protocol": "https",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"4784"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar um funcionário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n            \"id\": ,\n            \"employee_name\": \"Jhon Hilts\",\n            \"employee_salary\": 250500,\n            \"employee_age\": 33,\n            \"profile_image\": \"\"\n        },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dummy.restapiexample.com/api/v1/create",
+					"protocol": "https",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar um funcionário",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n            \"id\": 4784,\n            \"employee_name\": \"Jhon Hilts\",\n            \"employee_salary\": 250500,\n            \"employee_age\": 34,\n            \"profile_image\": \"\"\n },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dummy.restapiexample.com/api/v1/update/4784",
+					"protocol": "https",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"update",
+						"4784"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar funcionário",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://dummy.restapiexample.com/api/v1/delete/4784",
+					"protocol": "https",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"delete",
+						"4784"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

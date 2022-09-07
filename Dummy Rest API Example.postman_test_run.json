@@ -1,0 +1,128 @@
+{
+	"id": "606614a3-9ac7-4055-b317-db97eec5b758",
+	"name": "Dummy Rest API Example",
+	"timestamp": "2022-09-07T13:59:42.548Z",
+	"collection_id": "23045306-c80b17c8-e84a-43c6-b5dd-25522353616d",
+	"folder_id": 0,
+	"environment_id": "23045306-bfeb845e-df56-44b0-bf92-8caace2f803d",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "5394e4a1-bbe9-4cea-af14-7d253efa615a",
+			"name": "Pegar todos funcionários",
+			"url": "https://dummy.restapiexample.com/api/v1/employees",
+			"time": 953,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				953
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2f2f46df-0cc5-44c6-b56d-519c5c196156",
+			"name": "Pegar um funcionário",
+			"url": "https://dummy.restapiexample.com/api/v1/employee/4784",
+			"time": 750,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				750
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "31b777b8-970c-4d59-8b47-f90268a946fa",
+			"name": "Cadastrar um funcionário",
+			"url": "https://dummy.restapiexample.com/api/v1/create",
+			"time": 711,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				711
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c400f68d-929c-4185-9e6d-ade53f7be27f",
+			"name": "Atualizar um funcionário",
+			"url": "https://dummy.restapiexample.com/api/v1/update/4784",
+			"time": 702,
+			"responseCode": {
+				"code": 429,
+				"name": "Too Many Requests"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				702
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1075730f-63e6-4518-b95a-b4e2be46505d",
+			"name": "Deletar funcionário",
+			"url": "https://dummy.restapiexample.com/api/v1/delete/4784",
+			"time": 689,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				689
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3805,
+	"collection": {
+		"requests": [
+			{
+				"id": "5394e4a1-bbe9-4cea-af14-7d253efa615a",
+				"method": "GET"
+			},
+			{
+				"id": "2f2f46df-0cc5-44c6-b56d-519c5c196156",
+				"method": "GET"
+			},
+			{
+				"id": "31b777b8-970c-4d59-8b47-f90268a946fa",
+				"method": "POST"
+			},
+			{
+				"id": "c400f68d-929c-4185-9e6d-ade53f7be27f",
+				"method": "PUT"
+			},
+			{
+				"id": "1075730f-63e6-4518-b95a-b4e2be46505d",
+				"method": "DELETE"
+			}
+		]
+	}
+}
