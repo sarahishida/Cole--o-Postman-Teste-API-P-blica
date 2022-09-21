@@ -36,6 +36,35 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Techport",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/techport/api/projects/17792?api_key=DEMO_KEY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"techport",
+						"api",
+						"projects",
+						"17792"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "DEMO_KEY"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
