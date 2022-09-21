@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "b4ef3a70-7cb8-487a-882e-c1d203ecdc5d",
+		"name": "Deck Of Cards API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23045306"
+	},
+	"item": [
+		{
+			"name": "Shuffle the Cards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
+					"protocol": "http",
+					"host": [
+						"deckofcardsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"deck",
+						"new",
+						"shuffle",
+						""
+					],
+					"query": [
+						{
+							"key": "deck_count",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Draw A Card",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n            \"image\": \"http://deckofcardsapi.com/static/img/KH.png\",\n            \"value\": \"KING\",\n            \"suit\": \"HEARTS\",\n            \"code\": \"KH\"\n        },\n        {\n            \"image\": \"http://deckofcardsapi.com/static/img/8C.png\",\n            \"value\": \"8\",\n            \"suit\": \"CLUBS\",\n            \"code\": \"8C\"\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://deckofcardsapi.com/api/deck/8azckia0lfi9/draw/?count=2",
+					"protocol": "http",
+					"host": [
+						"deckofcardsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"deck",
+						"8azckia0lfi9",
+						"draw",
+						""
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reshuffle the Cards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://deckofcardsapi.com/api/deck/8azckia0lfi9/shuffle/?remaining=true\n",
+					"protocol": "http",
+					"host": [
+						"deckofcardsapi",
+						"com"
+					],
+					"path": [
+						"api",
+						"deck",
+						"8azckia0lfi9",
+						"shuffle",
+						""
+					],
+					"query": [
+						{
+							"key": "remaining",
+							"value": "true\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

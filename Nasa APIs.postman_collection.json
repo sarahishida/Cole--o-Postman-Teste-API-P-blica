@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "31aa0cd3-6b31-459b-ae3d-20b8b135ac27",
+		"name": "Nasa APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23045306"
+	},
+	"item": [
+		{
+			"name": "Astronomy Picture of the Day",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2021-07-26",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"apod"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "DEMO_KEY"
+						},
+						{
+							"key": "date",
+							"value": "2021-07-26"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
